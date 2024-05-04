@@ -12,10 +12,10 @@
           <h3 class="font-bold text-xl">LOGO</h3>
         </div>
       </div>
-      <div class="h-[100%] bg-blue-950  py-[20px]">
-        <div class="flex flex-col justify-between h-full space-y-[10px]">
+      <div class="h-[100%] bg-blue-950">
+        <div class="flex flex-col justify-between  space-y-[10px] h-[100%] content-between">
           <div>
-            <div class="text-center pb-[20px] border-b-[1px] mb-[20px]">
+            <div class="text-center pb-[20px] border-b-[1px] my-[20px]">
               <h3 class="font-bold text-xl">Panel de Control</h3>
             </div>
             <div class=" flex flex-col justify-between space-y-[10px] px-[20px]">
@@ -30,10 +30,15 @@
               
             </div>
           </div>
-          <div class="h-[50px]">
-            <div class="flex justify-center items-center pt-[20px] border-t-[1px]">
-              Copyright aea
-            </div>
+          <div class="flex flex-col justify-center items-center py-[10px] border-t-[1px]">
+            Integrantes:
+            <ul class="text-sm p-[10px] space-y-[4px]">
+              <li>Gabriel Antonio Argel Villalba</li>
+              <li>Diego Armando Argumedo Lopez</li>
+              <li>Juan David Delgado Guerra</li>
+              <li>Daniel Jose Sanchez Paternina</li>
+              <li>Elkin Andres Vasquez Madrid</li>
+            </ul>
           </div>
         </div>
       </div>

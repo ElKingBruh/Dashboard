@@ -30,7 +30,7 @@
         </div>
           
         <div class="font-bold text-lg hidden sm:flex ">
-          Nombre de usuario
+          Dashboard
         </div>
         <!-- User login -->
         <div class=" cursor-pointer">
