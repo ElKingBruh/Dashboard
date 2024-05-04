@@ -36,8 +36,8 @@
       </nav>
 
       <!-- Content area -->
-      <div class="w-full bg-gray-50 p-[20px] h-[92%] flex justify-center items-center">
-        <div class="container border border-gray-300 rounded-md h-[97%] w-[95%] overflow-auto scroll-smooth">
+      <div class="w-full bg-gray-50 p-[20px] h-[92%] flex justify-center">
+        <div class="container border border-gray-300 rounded-md h-[97%] overflow-auto scroll-smooth ">
           <router-view class="m-[15px]"></router-view>
         </div>
       </div>
