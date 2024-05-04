@@ -21,11 +21,11 @@
             <div class=" flex flex-col justify-between space-y-[10px] px-[20px]">
               <RedirectButton to="/firstOption">
                 <IconOne/>
-                Opción 1
+                Actividad 1
               </RedirectButton>
               <RedirectButton to="/SecondOption">
                 <IconTwo/>
-                Opción 2
+                Actividad 2
               </RedirectButton>
               
             </div>
