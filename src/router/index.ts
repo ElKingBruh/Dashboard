@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import dashboard from '../views/master/dashboard.vue'
-import firstOption from '../views/firstOption.vue'
-import secondOption from '../views/secondOption.vue'
+import dashboard from '@/views/master/dashboard.vue'
+import ActividadUno from '@/views/ActividadUno.vue'
+import ActividadDos from '@/views/ActividadDos.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,14 +12,14 @@ const router = createRouter({
       component: dashboard,
       children: [
          {
-          name: 'firstOption',
-          path: '/firstOption',
-          component:firstOption
+          name: 'ActividadUno',
+          path: '/ActividadUno',
+          component:ActividadUno
         },
         {
-          name: 'secondOption',
-          path: '/secondOption',
-          component:secondOption
+          name: 'ActividadDos',
+          path: '/ActividadDos',
+          component:ActividadDos
         }
       ]
     },

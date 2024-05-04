@@ -22,13 +22,13 @@
           <!-- options -->
           <ul class=" flex flex-col justify-between space-y-[10px] px-[20px]">
             <li>
-              <RedirectButton to="/firstOption">
+              <RedirectButton to="/ActividadUno">
                 <IconOne/>
                 Actividad 1
               </RedirectButton>
             </li>
             <li>
-              <RedirectButton to="/SecondOption">
+              <RedirectButton to="/ActividadDos">
               <IconTwo/>
               Actividad 2
             </RedirectButton>
