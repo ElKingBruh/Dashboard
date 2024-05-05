@@ -20,8 +20,6 @@ onMounted(async () => {
     facultades.value = new Set(response.data.map(item => item.facultad));
 
     programas.value = new Set(response.data.map(item => item.programa));
-
-    programasFiltrados.value = [...programas.value];
   } catch (error) {
     console.error(error);
   }
