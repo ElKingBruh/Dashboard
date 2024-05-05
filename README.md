@@ -1,4 +1,10 @@
 # dashboard
+Activity members:
+-Gabriel Antonio Argel Villalba
+-Diego Armando Argumedo Lopez
+-Juan David Delgado Guerra
+-Daniel Jose Sanchez Paternina
+-Elkin Andres Vasquez Madrid
 
 This template should help get you started developing with Vue 3 in Vite.
 
