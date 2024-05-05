@@ -6,7 +6,6 @@ const list = ref([]);
 const periodos = ref([]);
 const facultades = ref([]);
 const programas = ref([]);
-const programasFiltrados = ref([]);
 const selectedPeriodo = ref('');
 const selectedFacultad = ref('');
 const selectedPrograma = ref('');
@@ -27,12 +26,6 @@ onMounted(async () => {
     console.error(error);
   }
 });
-
-const filtrarProgramas = () => {
-  return selectedFacultad.value
-    ? list.value.filter(item => item.facultad === selectedFacultad.value).map(item => item.programa)
-    : programas;
-};
 
 const filtrarTabla = async () => {
   try {
@@ -59,14 +52,6 @@ const filtrarTabla = async () => {
     console.error(error);
   }
 };
-
-watch(selectedFacultad, () => {
-  programas.value = filtrarProgramas();
-});
-
-watch(selectedPrograma, () => {
-  filtrarTabla();
-});
 </script>
 
 
@@ -84,7 +69,7 @@ watch(selectedPrograma, () => {
 
     <select v-model="selectedPrograma" class="px-6 py-2 rounded-lg shadow-md bg-neutral-200 w-[12rem]">
       <option value="">Programa</option>
-      <option v-for="programa in programasFiltrados" :value="programa">{{ programa }}</option>
+      <option v-for="programa in programas" :value="programa">{{ programa }}</option>
     </select>
 
 
@@ -107,9 +92,9 @@ watch(selectedPrograma, () => {
             </thead>
             <tbody>
               <tr v-for="fila in list" class="border-b border-neutral-200 dark:border-white/10 flex">
-                <td class="whitespace-nowrap px-6 py-4 text-center text-xs sm:text-base font-semibold w-[95%]">{{ fila.periodo }}</td>
-                <td class="whitespace-nowrap py-4 text-center text-xs sm:text-base w-[95%]">{{ fila.facultad }}</td>
-                <td class="whitespace-nowrap px-6 py-4 text-center text-xs sm:text-base w-[95%]">{{ fila.programa }}</td>
+                <td class="whitespace-nowrap px-6 py-4 text-xs sm:text-base font-semibold w-[95%]">{{ fila.periodo }}</td>
+                <td class="whitespace-nowrap py-4 text-xs sm:text-base w-[95%]">{{ fila.facultad }}</td>
+                <td class="whitespace-nowrap px-6 py-4 text-xs sm:text-base w-[95%]">{{ fila.programa }}</td>
               </tr>
             </tbody>
           </table>
